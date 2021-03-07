@@ -2,25 +2,25 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Nav from './Nav';
 
-const Logo = styled.h1`
-  background: var(--primary);
-  font-size: 4rem;
-  margin-left: 2rem;
+const Logo = styled.p`
+  align-items: center;
+  color: var(--black);
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
   position: relative;
-  transform: skew(-7deg);
   z-index: 2;
-  a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
+  img {
+    max-width: 55px;
   }
 `;
 
 const HeaderStyles = styled.header`
   .bar {
-    align-items: center;
-    border-bottom: 10px solid var(--black, black);
+    align-items: stretch;
+    border-bottom: 2px solid var(--lightGrey);
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
@@ -37,14 +37,17 @@ export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
-        <Logo>
-          <Link href="/">Plántalo</Link>
-        </Logo>
+        <Link href="/">
+          <Logo>
+            <img src="/static/plantalo-logo.png" alt="Logo Plántalo" />
+            Plántalo
+          </Logo>
+        </Link>
+        <Nav />
       </div>
       <div className="sub-bar">
         <p>Search</p>
       </div>
-      <Nav />
     </HeaderStyles>
   );
 }

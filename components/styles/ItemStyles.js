@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
-const Item = styled.div`
+const ItemStyles = styled.div`
   background: white;
   border: 1px solid var(--offWhite);
-  box-shadow: var(--bs);
   position: relative;
   display: flex;
   flex-direction: column;
   img {
+    height: auto;
     width: 100%;
-    height: 400px;
     object-fit: cover;
   }
   p {
@@ -35,4 +34,4 @@ const Item = styled.div`
   }
 `;
 
-export default Item;
+export default ItemStyles;

@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 
 const Title = styled.h3`
-  margin: 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0.5rem 1rem;
   text-align: center;
-  transform: skew(-5deg) rotate(-1deg);
-  margin-top: -3rem;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   a {
-    background: var(--primary);
-    display: inline;
-    line-height: 1.3;
-    font-size: 4rem;
+    color: var(--grey);
+    display: block;
+    line-height: 1.4;
     text-align: center;
-    color: white;
     padding: 0 1rem;
   }
 `;
