@@ -10,7 +10,8 @@ const GlobalStyles = createGlobalStyle`
     src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
   }
   html {
-    --red: #ff0000;
+    --primary: #13AA52;
+    --red: #FF0000;
     --black: #393939;
     --grey: #3A3A3A;
     --gray: var(--grey);

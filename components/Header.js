@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Nav from './Nav';
 
 const Logo = styled.h1`
-  background: red;
+  background: var(--primary);
   font-size: 4rem;
   margin-left: 2rem;
   position: relative;
@@ -38,7 +38,7 @@ export default function Header() {
     <HeaderStyles>
       <div className="bar">
         <Logo>
-          <Link href="/">Sick Fits</Link>
+          <Link href="/">Plántalo</Link>
         </Logo>
       </div>
       <div className="sub-bar">
