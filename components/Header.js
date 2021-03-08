@@ -5,6 +5,7 @@ import Nav from './Nav';
 const Logo = styled.p`
   align-items: center;
   color: var(--black);
+  cursor: pointer;
   display: flex;
   font-family: 'Comfortaa', cursive;
   font-size: 1.65rem;
