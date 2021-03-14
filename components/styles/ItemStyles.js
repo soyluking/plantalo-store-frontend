@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const ItemStyles = styled.div`
   background: white;
-  border: 1px solid var(--offWhite);
   position: relative;
   display: flex;
   flex-direction: column;
   img {
+    cursor: pointer;
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -18,18 +18,30 @@ const ItemStyles = styled.div`
     padding: 0 3rem;
     font-size: 1.5rem;
   }
+  .productInfo {
+    border: 1px solid var(--lightGray);
+    border-top: 0;
+    text-align: center;
+  }
   .buttonList {
-    display: grid;
-    width: 100%;
+    background: var(--lightGray);
     border-top: 1px solid var(--lightGray);
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1px;
-    background: var(--lightGray);
+    text-align: center;
+    width: 100%;
     & > * {
       background: white;
       border: 0;
+      cursor: pointer;
       font-size: 1rem;
-      padding: 1rem;
+      font-weight: 700;
+      padding: 0.25rem;
+      &:hover {
+        background-color: var(--lightGray);
+        text-decoration: none;
+      }
     }
   }
 `;
