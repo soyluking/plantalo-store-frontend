@@ -1,9 +1,9 @@
-import UptateProduct from '../components/UptateProduct';
+import UpdateProduct from '../components/UpdateProduct';
 
 export default function UpdatePage({ query }) {
   return (
     <div>
-      <UptateProduct id={query.id} />
+      <UpdateProduct id={query.id} />
     </div>
   );
 }

@@ -24,7 +24,7 @@ const UPDATE_PRODUCT_MUTATION = gql`
   }
 `;
 
-export default function UptateProduct({ id }) {
+export default function UpdateProduct({ id }) {
   // 1. We need to get existing product
   const { data, loading, error } = useQuery(SINGLE_ITEM_QUERY, {
     variables: {
